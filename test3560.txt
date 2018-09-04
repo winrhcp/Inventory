@@ -1,0 +1,177 @@
+terminal length 24
+Switch#terminal length 0
+Switch#sh run
+Building configuration...
+
+Current configuration : 3641 bytes
+!
+version 12.2
+no service pad
+service timestamps debug uptime
+service timestamps log uptime
+no service password-encryption
+!
+hostname Switch
+!
+boot-start-marker
+boot-end-marker
+!
+enable secret 5 $1$IFr2$enhqk2g.ffF6.vgmvPVSG0
+!
+username win password 0 win
+no aaa new-model
+system mtu routing 1500
+vtp domain AIT
+vtp mode transparent
+ip subnet-zero
+ip routing
+ip domain-name win
+!
+!
+!
+!
+crypto pki trustpoint TP-self-signed-98000128
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-98000128
+ revocation-check none
+ rsakeypair TP-self-signed-98000128
+!
+!
+crypto pki certificate chain TP-self-signed-98000128
+ certificate self-signed 01
+  3082023E 308201A7 A0030201 02020101 300D0609 2A864886 F70D0101 04050030 
+  2F312D30 2B060355 04031324 494F532D 53656C66 2D536967 6E65642D 43657274 
+  69666963 6174652D 39383030 30313238 301E170D 39333033 30313030 30313030 
+  5A170D32 30303130 31303030 3030305A 302F312D 302B0603 55040313 24494F53 
+  2D53656C 662D5369 676E6564 2D436572 74696669 63617465 2D393830 30303132 
+  3830819F 300D0609 2A864886 F70D0101 01050003 818D0030 81890281 8100C642 
+  93B3CE23 7E62D078 7A943443 D82EFD43 12AA9FB1 5AC4CF66 DE234A58 360F406C 
+  D2662359 C9BFB720 AE07A5D4 03465DE9 25682F8E 4DE133A6 8CB26794 0027B303 
+  E752FE9F 61F582E2 7FCFB1B2 F787B2DB 2D37FFCC 71140A0C 9B00DA0F 36FD66D9 
+  091089B3 76C037F8 9D6B645A B4A11C6C BB7252C4 9BFF645C C5569A9A 4FC10203 
+  010001A3 6A306830 0F060355 1D130101 FF040530 030101FF 30150603 551D1104 
+  0E300C82 0A537769 7463682E 77696E30 1F060355 1D230418 30168014 C1A99304 
+  FDD4CC74 8BB05D8F 8497C802 FA2CD39C 301D0603 551D0E04 160414C1 A99304FD 
+  D4CC748B B05D8F84 97C802FA 2CD39C30 0D06092A 864886F7 0D010104 05000381 
+  8100C159 740685F3 33F31BA8 E17203FB 19A99D93 104D8EC6 6D15E5C2 5A1CE69D 
+  5ABCF223 8A9DD9D4 C5ABDC80 B9107C42 190810AC C61BBA13 D5E92199 951628A9 
+  4373A2A4 CC653A6F 9574C29E 6978CFBA 0EF4A948 CA49F722 E26F1640 22BC7B08 
+  1B358029 FF339074 EDA1E68E 83B37D36 127DAF5F 7CD49B73 0BFEC170 42C996B8 0327
+  quit
+!
+!
+!
+!
+!
+!
+spanning-tree mode rapid-pvst
+spanning-tree etherchannel guard misconfig
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+vlan 10 
+!
+vlan 20
+ name data2
+!
+vlan 254 
+!
+ip ssh version 2
+!
+!
+interface FastEthernet0/1
+ switchport access vlan 254
+ switchport mode access
+!
+interface FastEthernet0/2
+ switchport access vlan 20
+ switchport mode access
+!
+interface FastEthernet0/3
+ switchport access vlan 20
+ switchport mode access
+!
+interface FastEthernet0/4
+!
+interface FastEthernet0/5
+!
+interface FastEthernet0/6
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface FastEthernet0/12
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+!
+interface FastEthernet0/24
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan10
+ no ip address
+!
+interface Vlan20
+ no ip address
+!
+interface Vlan254
+ ip address 10.1.254.1 255.255.255.0
+!
+ip classless
+ip http server
+ip http secure-server
+!
+!
+control-plane
+!
+!
+line con 0
+ logging synchronous
+line vty 0 4
+ login local
+ transport input ssh
+line vty 5 15
+ login local
+ transport input ssh
+!
+end
+
+Switch#
