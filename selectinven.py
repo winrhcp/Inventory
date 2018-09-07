@@ -7,16 +7,16 @@ def main():
     user = "sakrapee"
     password = "sakrapee41"
     en_pass = 'win'
-    ope = open('C:\\Users\\Thanawin\\Desktop\\python_network_script\\Inventory\\testinvencore.txt','r')
+    ip = ""
+    for n in sys.argv:
+        try:
+            ip = str(n)
+        except Exception as e:
+            raise e
+    
     print ("--- Start ---")
-    keep = ope.read().split('\n')
-    ope.close()
     '''result=[]'''
-        
-    for i in keep:
-        print (i)
-        '''result.append(telnet(i,user,password))'''
-        call(i,user,password, en_pass)
+    call(ip,user,password, en_pass)
 
     # cwd = os.getcwd()
     # print ("Path Output " + (cwd))

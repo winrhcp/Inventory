@@ -1,0 +1,158 @@
+
+TCD1-041DS01#terminal length 0
+TCD1-041DS01#sh inven
+NAME: "Switch System", DESCR: "Cisco Systems, Inc. WS-C4507R+E 7 slot switch "
+PID: WS-C4507R+E       , VID: V08  , SN: FXS1844Q29F
+
+NAME: "Clock Module", DESCR: "Clock Module"
+PID: WS-X4K-CLOCK-E    , VID:      , SN: FXS184308CJ
+
+NAME: "Mux Buffer 1 ", DESCR: "Mux Buffers for Redundancy Logic"
+PID: WS-X4590-EX=      , VID:      , SN: FXS1843028Y
+
+NAME: "Mux Buffer 2 ", DESCR: "Mux Buffers for Redundancy Logic"
+PID: WS-X4590-EX=      , VID:      , SN: FXS184204FC
+
+NAME: "Mux Buffer 5 ", DESCR: "Mux Buffers for Redundancy Logic"
+PID: WS-X4590-EX=      , VID:      , SN: FXS184205DQ
+
+NAME: "Mux Buffer 6 ", DESCR: "Mux Buffers for Redundancy Logic"
+PID: WS-X4590-EX=      , VID:      , SN: FXS184302BY
+
+NAME: "Mux Buffer 7 ", DESCR: "Mux Buffers for Redundancy Logic"
+PID: WS-X4590-EX=      , VID:      , SN: FXS1843027H
+
+NAME: "Linecard(slot 1)", DESCR: "1000BaseX (GBIC) with 6 1000 GBIC ports"
+PID: WS-X4306-GB       , VID: V01  , SN: JAE08491FRR
+
+NAME: "GigabitEthernet1/1", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGS084105ZT
+
+NAME: "GigabitEthernet1/2", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGS084105ZW
+
+NAME: "GigabitEthernet1/3", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGS0841061P
+
+NAME: "GigabitEthernet1/4", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGS0841060Q
+
+NAME: "GigabitEthernet1/5", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGS0841060V
+
+NAME: "GigabitEthernet1/6", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGS08410618
+
+NAME: "Linecard(slot 2)", DESCR: "1000BaseX (GBIC) with 6 1000 GBIC ports"
+PID: WS-X4306-GB       , VID: V01  , SN: JAE09023KYR
+
+NAME: "GigabitEthernet2/1", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGS084105ZH
+
+NAME: "GigabitEthernet2/2", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGS0841061R
+
+NAME: "GigabitEthernet2/3", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGS0841061A
+
+NAME: "GigabitEthernet2/4", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGS0841061S
+
+NAME: "GigabitEthernet2/5", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGS0841060F
+
+NAME: "GigabitEthernet2/6", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGS08410622
+
+NAME: "Supervisor(slot 3)", DESCR: "Sup 8-E 10GE (SFP+), 1000BaseX (SFP) with 8 SFP+ Ports"
+PID: WS-X45-SUP8-E     , VID: V04  , SN: CAT1846L4MT
+
+NAME: "TenGigabitEthernet3/1", DESCR: "SFP-10Gbase-LR"
+PID: SFP-10G-LR        , VID: V02  , SN: FNS18471GJH
+
+NAME: "TenGigabitEthernet3/3", DESCR: "1000BaseLH"
+PID: GLC-LH-SMD        , VID: V01  , SN: FNS18390ZJ4
+
+NAME: "Supervisor(slot 4)", DESCR: "Sup 8-E 10GE (SFP+), 1000BaseX (SFP) with 8 SFP+ Ports"
+PID: WS-X45-SUP8-E     , VID: V04  , SN: CAT1846L4E3
+
+NAME: "TenGigabitEthernet4/1", DESCR: "SFP-10Gbase-LR"
+PID: SFP-10G-LR        , VID: V02  , SN: FNS18471GFM
+
+NAME: "TenGigabitEthernet4/3", DESCR: "1000BaseLH"
+PID: GLC-LH-SMD        , VID: V01  , SN: FNS1839116A
+
+NAME: "Linecard(slot 5)", DESCR: "1000BaseX (GBIC) with 6 1000 GBIC ports"
+PID: WS-X4306-GB       , VID: V09  , SN: JAE10170KQD
+
+NAME: "GigabitEthernet5/1", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGS0841060H
+
+NAME: "GigabitEthernet5/2", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGS084105ZQ
+
+NAME: "GigabitEthernet5/3", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: JUT101101LE
+
+NAME: "GigabitEthernet5/4", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGS084105ZS
+
+NAME: "GigabitEthernet5/5", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGS0841060D
+
+NAME: "GigabitEthernet5/6", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGS0841061U
+
+NAME: "Linecard(slot 6)", DESCR: "1000BaseX (GBIC) with 6 1000 GBIC ports"
+PID: WS-X4306-GB       , VID: V01  , SN: JAE09023L8N
+
+NAME: "GigabitEthernet6/1", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGS084105Z8
+
+NAME: "GigabitEthernet6/2", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGS084105ZR
+
+NAME: "GigabitEthernet6/3", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: JUT101101KD
+
+NAME: "GigabitEthernet6/4", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGS084109YB
+
+NAME: "GigabitEthernet6/5", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGS08410A00
+
+NAME: "GigabitEthernet6/6", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGC1152F2YG
+
+NAME: "Linecard(slot 7)", DESCR: "1000BaseX (GBIC) with 6 1000 GBIC ports"
+PID: WS-X4306-GB       , VID: V09  , SN: JAE102658KU
+
+NAME: "GigabitEthernet7/1", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: A1302030   
+
+NAME: "GigabitEthernet7/2", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: A1302030   
+
+NAME: "GigabitEthernet7/3", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: A01997315  
+
+NAME: "GigabitEthernet7/4", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: 23         
+
+NAME: "GigabitEthernet7/5", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: AGC1152F13K
+
+NAME: "GigabitEthernet7/6", DESCR: "1000BaseLH"
+PID: Unspecified       , VID:      , SN: FNS13030MP1
+
+NAME: "FanTray 1", DESCR: "FanTray"
+PID: WS-X4597+E        , VID: V04  , SN: FXS1844Q3BJ
+
+NAME: "Power Supply 1", DESCR: "Power Supply ( AC 4200W )"
+PID: PWR-C45-4200ACV   , VID: V05  , SN: ART1841F248
+
+NAME: "Power Supply 2", DESCR: "Power Supply ( AC 4200W )"
+PID: PWR-C45-4200ACV   , VID: V05  , SN: ART1841F26N
+
+
+TCD1-041DS01#

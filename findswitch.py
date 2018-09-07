@@ -5,22 +5,22 @@ import mysql.connector
 
 def main():
     """Main Function"""
-    user = 'win'
-    password = 'win'
-    ope = open('C:\\Users\\Thanawin\\Desktop\\testip\\iptest.txt','r')
-    print ('--- Start ---')
-    keep = ope.read().split('\n')
-    ope.close()
+    user = 'sakrapee'
+    password = 'sakrapee41'
+    ip_client = ""
+    for n in sys.argv:
+        try:
+            ip_client = str(n)
+        except Exception as e:
+            raise e
+    print ("--- Start ---")
+    
     '''result=[]'''
         
-    for ip_client in keep:
-        print (ip_client)
-        '''result.append(telnet(i,user,password))'''
-        core_switch(ip_client, user, password)
-
+    core_switch(ip_client, user, password)
     # cwd = os.getcwd()
     # print ("Path Output " + (cwd))
-    print ('--- End ---')
+    print ("--- End ---")
     input("Press enter to exit...")
 
 def core_switch(Host,username,passwd):
