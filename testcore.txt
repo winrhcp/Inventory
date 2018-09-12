@@ -1,158 +1,310 @@
+TCD1-041CS02#terminal length 0
+TCD1-041CS02#sh inven
+NAME: "WS-C6513-E", DESCR: "Cisco Systems, Inc. Catalyst 6500 13-slot Chassis System"
+PID: WS-C6513-E        ,                     VID: V03, SN: FXS1841Q0C0
 
-TCD1-041DS01#terminal length 0
-TCD1-041DS01#sh inven
-NAME: "Switch System", DESCR: "Cisco Systems, Inc. WS-C4507R+E 7 slot switch "
-PID: WS-C4507R+E       , VID: V08  , SN: FXS1844Q29F
+NAME: "WS-C6K-VTT-E 1", DESCR: "VTT-E FRU 1"
+PID: WS-C6K-VTT-E      ,                     VID:    , SN: SMT1808Z061
 
-NAME: "Clock Module", DESCR: "Clock Module"
-PID: WS-X4K-CLOCK-E    , VID:      , SN: FXS184308CJ
+NAME: "WS-C6K-VTT-E 2", DESCR: "VTT-E FRU 2"
+PID: WS-C6K-VTT-E      ,                     VID:    , SN: SMT1808Z086
 
-NAME: "Mux Buffer 1 ", DESCR: "Mux Buffers for Redundancy Logic"
-PID: WS-X4590-EX=      , VID:      , SN: FXS1843028Y
+NAME: "WS-C6K-VTT-E 3", DESCR: "VTT-E FRU 3"
+PID: WS-C6K-VTT-E      ,                     VID:    , SN: SMT1808Z115
 
-NAME: "Mux Buffer 2 ", DESCR: "Mux Buffers for Redundancy Logic"
-PID: WS-X4590-EX=      , VID:      , SN: FXS184204FC
+NAME: "WS-C6513-E-CL 1", DESCR: "(Clock type 0.0.0.5) 1"
+PID: WS-C6513-E-CL     ,                     VID:    , SN: FXS181804VJ
 
-NAME: "Mux Buffer 5 ", DESCR: "Mux Buffers for Redundancy Logic"
-PID: WS-X4590-EX=      , VID:      , SN: FXS184205DQ
+NAME: "WS-C6513-E-CL 2", DESCR: "(Clock type 0.0.0.5) 2"
+PID: WS-C6513-E-CL     ,                     VID:    , SN: FXS181804VJ
 
-NAME: "Mux Buffer 6 ", DESCR: "Mux Buffers for Redundancy Logic"
-PID: WS-X4590-EX=      , VID:      , SN: FXS184302BY
+NAME: "1", DESCR: "WS-X6904-40G DCEF2T 4 port 40GE / 16 port 10GE Rev. 1.1"
+PID: WS-X6904-40G      ,                     VID: V01, SN: SAL185069XN
 
-NAME: "Mux Buffer 7 ", DESCR: "Mux Buffers for Redundancy Logic"
-PID: WS-X4590-EX=      , VID:      , SN: FXS1843027H
+NAME: "WS-F6K-DFC4-E Distributed Forwarding Card 4 EARL 1 sub-module of 1", DESCR: "WS-F6K-DFC4-E Distributed Forwarding Card 4 Rev. 1.2"
+PID: WS-F6K-DFC4-E     ,                     VID: V03, SN: SAL184859Z6
 
-NAME: "Linecard(slot 1)", DESCR: "1000BaseX (GBIC) with 6 1000 GBIC ports"
-PID: WS-X4306-GB       , VID: V01  , SN: JAE08491FRR
+NAME: "4X Interface Adapter Module Fo1/1", DESCR: "4X Interface Adapter Module Fo1/1"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY1846016J
 
-NAME: "GigabitEthernet1/1", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGS084105ZT
+NAME: "4X Interface Adapter Module Fo1/2", DESCR: "4X Interface Adapter Module Fo1/2"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY184600UM
 
-NAME: "GigabitEthernet1/2", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGS084105ZW
+NAME: "4X Interface Adapter Module Fo1/3", DESCR: "4X Interface Adapter Module Fo1/3"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY18460149
 
-NAME: "GigabitEthernet1/3", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGS0841061P
+NAME: "4X Interface Adapter Module Fo1/4", DESCR: "4X Interface Adapter Module Fo1/4"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY184600X4
 
-NAME: "GigabitEthernet1/4", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGS0841060Q
+NAME: "Transceiver Te1/5", DESCR: "SFP+ Transceiver 10Gbase-LR Te1/5"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471SJA     
 
-NAME: "GigabitEthernet1/5", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGS0841060V
+NAME: "Transceiver Te1/6", DESCR: "SFP+ Transceiver 10Gbase-LR Te1/6"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471SEJ     
 
-NAME: "GigabitEthernet1/6", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGS08410618
+NAME: "Transceiver Te1/7", DESCR: "SFP+ Transceiver 10Gbase-LR Te1/7"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471SF2     
 
-NAME: "Linecard(slot 2)", DESCR: "1000BaseX (GBIC) with 6 1000 GBIC ports"
-PID: WS-X4306-GB       , VID: V01  , SN: JAE09023KYR
+NAME: "Transceiver Te1/10", DESCR: "SFP+ Transceiver 10Gbase-LR Te1/10"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471HJL     
 
-NAME: "GigabitEthernet2/1", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGS084105ZH
+NAME: "2", DESCR: "WS-X6904-40G DCEF2T 4 port 40GE / 16 port 10GE Rev. 1.1"
+PID: WS-X6904-40G      ,                     VID: V01, SN: SAL185069YF
 
-NAME: "GigabitEthernet2/2", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGS0841061R
+NAME: "WS-F6K-DFC4-E Distributed Forwarding Card 4 EARL 1 sub-module of 2", DESCR: "WS-F6K-DFC4-E Distributed Forwarding Card 4 Rev. 1.2"
+PID: WS-F6K-DFC4-E     ,                     VID: V03, SN: SAL18495QZL
 
-NAME: "GigabitEthernet2/3", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGS0841061A
+NAME: "4X Interface Adapter Module Fo2/1", DESCR: "4X Interface Adapter Module Fo2/1"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY184600NG
 
-NAME: "GigabitEthernet2/4", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGS0841061S
+NAME: "4X Interface Adapter Module Fo2/2", DESCR: "4X Interface Adapter Module Fo2/2"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY184600WZ
 
-NAME: "GigabitEthernet2/5", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGS0841060F
+NAME: "4X Interface Adapter Module Fo2/3", DESCR: "4X Interface Adapter Module Fo2/3"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY184600RZ
 
-NAME: "GigabitEthernet2/6", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGS08410622
+NAME: "4X Interface Adapter Module Fo2/4", DESCR: "4X Interface Adapter Module Fo2/4"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY1846016E
 
-NAME: "Supervisor(slot 3)", DESCR: "Sup 8-E 10GE (SFP+), 1000BaseX (SFP) with 8 SFP+ Ports"
-PID: WS-X45-SUP8-E     , VID: V04  , SN: CAT1846L4MT
+NAME: "Transceiver Te2/5", DESCR: "SFP+ Transceiver 10Gbase-LR Te2/5"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471GR7     
 
-NAME: "TenGigabitEthernet3/1", DESCR: "SFP-10Gbase-LR"
-PID: SFP-10G-LR        , VID: V02  , SN: FNS18471GJH
+NAME: "Transceiver Te2/6", DESCR: "SFP+ Transceiver 10Gbase-LR Te2/6"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471GSX     
 
-NAME: "TenGigabitEthernet3/3", DESCR: "1000BaseLH"
-PID: GLC-LH-SMD        , VID: V01  , SN: FNS18390ZJ4
+NAME: "Transceiver Te2/7", DESCR: "SFP+ Transceiver 10Gbase-LR Te2/7"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471LN6     
 
-NAME: "Supervisor(slot 4)", DESCR: "Sup 8-E 10GE (SFP+), 1000BaseX (SFP) with 8 SFP+ Ports"
-PID: WS-X45-SUP8-E     , VID: V04  , SN: CAT1846L4E3
+NAME: "Transceiver Te2/10", DESCR: "SFP+ Transceiver 10Gbase-LR Te2/10"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471M5W     
 
-NAME: "TenGigabitEthernet4/1", DESCR: "SFP-10Gbase-LR"
-PID: SFP-10G-LR        , VID: V02  , SN: FNS18471GFM
+NAME: "3", DESCR: "WS-X6904-40G DCEF2T 4 port 40GE / 16 port 10GE Rev. 1.1"
+PID: WS-X6904-40G      ,                     VID: V01, SN: SAL18506A04
 
-NAME: "TenGigabitEthernet4/3", DESCR: "1000BaseLH"
-PID: GLC-LH-SMD        , VID: V01  , SN: FNS1839116A
+NAME: "WS-F6K-DFC4-E Distributed Forwarding Card 4 EARL 1 sub-module of 3", DESCR: "WS-F6K-DFC4-E Distributed Forwarding Card 4 Rev. 1.2"
+PID: WS-F6K-DFC4-E     ,                     VID: V03, SN: SAL18495R2R
 
-NAME: "Linecard(slot 5)", DESCR: "1000BaseX (GBIC) with 6 1000 GBIC ports"
-PID: WS-X4306-GB       , VID: V09  , SN: JAE10170KQD
+NAME: "4X Interface Adapter Module Fo3/1", DESCR: "4X Interface Adapter Module Fo3/1"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY1846010S
 
-NAME: "GigabitEthernet5/1", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGS0841060H
+NAME: "4X Interface Adapter Module Fo3/2", DESCR: "4X Interface Adapter Module Fo3/2"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY184600TM
 
-NAME: "GigabitEthernet5/2", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGS084105ZQ
+NAME: "4X Interface Adapter Module Fo3/3", DESCR: "4X Interface Adapter Module Fo3/3"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY184600N5
 
-NAME: "GigabitEthernet5/3", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: JUT101101LE
+NAME: "4X Interface Adapter Module Fo3/4", DESCR: "4X Interface Adapter Module Fo3/4"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY1846011D
 
-NAME: "GigabitEthernet5/4", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGS084105ZS
+NAME: "Transceiver Te3/5", DESCR: "SFP+ Transceiver 10Gbase-LR Te3/5"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471GTA     
 
-NAME: "GigabitEthernet5/5", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGS0841060D
+NAME: "Transceiver Te3/6", DESCR: "SFP+ Transceiver 10Gbase-LR Te3/6"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471GSQ     
 
-NAME: "GigabitEthernet5/6", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGS0841061U
+NAME: "Transceiver Te3/7", DESCR: "SFP+ Transceiver 10Gbase-LR Te3/7"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471GQ0     
 
-NAME: "Linecard(slot 6)", DESCR: "1000BaseX (GBIC) with 6 1000 GBIC ports"
-PID: WS-X4306-GB       , VID: V01  , SN: JAE09023L8N
+NAME: "Transceiver Te3/8", DESCR: "SFP+ Transceiver 10Gbase-LR Te3/8"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471GRZ     
 
-NAME: "GigabitEthernet6/1", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGS084105Z8
+NAME: "Transceiver Te3/9", DESCR: "SFP+ Transceiver 10Gbase-LR Te3/9"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471SG6     
 
-NAME: "GigabitEthernet6/2", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGS084105ZR
+NAME: "Transceiver Te3/10", DESCR: "SFP+ Transceiver 10Gbase-LR Te3/10"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471SFZ     
 
-NAME: "GigabitEthernet6/3", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: JUT101101KD
+NAME: "Transceiver Te3/11", DESCR: "SFP+ Transceiver 10Gbase-LR Te3/11"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471SDW     
 
-NAME: "GigabitEthernet6/4", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGS084109YB
+NAME: "Transceiver Te3/12", DESCR: "SFP+ Transceiver 10Gbase-LR Te3/12"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471VZ9     
 
-NAME: "GigabitEthernet6/5", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGS08410A00
+NAME: "Transceiver Te3/13", DESCR: "SFP+ Transceiver 10Gbase-LR Te3/13"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471LP6     
 
-NAME: "GigabitEthernet6/6", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGC1152F2YG
+NAME: "Transceiver Te3/14", DESCR: "SFP+ Transceiver 10Gbase-LR Te3/14"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471LPS     
 
-NAME: "Linecard(slot 7)", DESCR: "1000BaseX (GBIC) with 6 1000 GBIC ports"
-PID: WS-X4306-GB       , VID: V09  , SN: JAE102658KU
+NAME: "Transceiver Te3/15", DESCR: "SFP+ Transceiver 10Gbase-LR Te3/15"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471LZB     
 
-NAME: "GigabitEthernet7/1", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: A1302030   
+NAME: "Transceiver Te3/16", DESCR: "SFP+ Transceiver 10Gbase-LR Te3/16"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471L4W     
 
-NAME: "GigabitEthernet7/2", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: A1302030   
+NAME: "4", DESCR: "WS-X6904-40G DCEF2T 4 port 40GE / 16 port 10GE Rev. 1.1"
+PID: WS-X6904-40G      ,                     VID: V01, SN: SAL18506A1H
 
-NAME: "GigabitEthernet7/3", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: A01997315  
+NAME: "WS-F6K-DFC4-E Distributed Forwarding Card 4 EARL 1 sub-module of 4", DESCR: "WS-F6K-DFC4-E Distributed Forwarding Card 4 Rev. 1.2"
+PID: WS-F6K-DFC4-E     ,                     VID: V03, SN: SAL184859YG
 
-NAME: "GigabitEthernet7/4", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: 23         
+NAME: "4X Interface Adapter Module Fo4/1", DESCR: "4X Interface Adapter Module Fo4/1"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY184600NB
 
-NAME: "GigabitEthernet7/5", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: AGC1152F13K
+NAME: "4X Interface Adapter Module Fo4/2", DESCR: "4X Interface Adapter Module Fo4/2"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY184600WP
 
-NAME: "GigabitEthernet7/6", DESCR: "1000BaseLH"
-PID: Unspecified       , VID:      , SN: FNS13030MP1
+NAME: "4X Interface Adapter Module Fo4/3", DESCR: "4X Interface Adapter Module Fo4/3"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY1846012J
 
-NAME: "FanTray 1", DESCR: "FanTray"
-PID: WS-X4597+E        , VID: V04  , SN: FXS1844Q3BJ
+NAME: "4X Interface Adapter Module Fo4/4", DESCR: "4X Interface Adapter Module Fo4/4"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY1846016A
 
-NAME: "Power Supply 1", DESCR: "Power Supply ( AC 4200W )"
-PID: PWR-C45-4200ACV   , VID: V05  , SN: ART1841F248
+NAME: "Transceiver Te4/5", DESCR: "SFP+ Transceiver 10Gbase-LR Te4/5"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471VZ1     
 
-NAME: "Power Supply 2", DESCR: "Power Supply ( AC 4200W )"
-PID: PWR-C45-4200ACV   , VID: V05  , SN: ART1841F26N
+NAME: "Transceiver Te4/6", DESCR: "SFP+ Transceiver 10Gbase-LR Te4/6"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471HDD     
+
+NAME: "Transceiver Te4/7", DESCR: "SFP+ Transceiver 10Gbase-LR Te4/7"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471HHB     
+
+NAME: "Transceiver Te4/8", DESCR: "SFP+ Transceiver 10Gbase-LR Te4/8"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471XX7     
+
+NAME: "Transceiver Te4/9", DESCR: "SFP+ Transceiver 10Gbase-LR Te4/9"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471XYA     
+
+NAME: "Transceiver Te4/10", DESCR: "SFP+ Transceiver 10Gbase-LR Te4/10"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471XYK     
+
+NAME: "Transceiver Te4/11", DESCR: "SFP+ Transceiver 10Gbase-LR Te4/11"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471XU0     
+
+NAME: "Transceiver Te4/12", DESCR: "SFP+ Transceiver 10Gbase-LR Te4/12"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471XZB     
+
+NAME: "Transceiver Te4/13", DESCR: "SFP+ Transceiver 10Gbase-LR Te4/13"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471GSK     
+
+NAME: "Transceiver Te4/14", DESCR: "SFP+ Transceiver 10Gbase-LR Te4/14"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471SF9     
+
+NAME: "Transceiver Te4/15", DESCR: "SFP+ Transceiver 10Gbase-LR Te4/15"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471EK8     
+
+NAME: "Transceiver Te4/16", DESCR: "SFP+ Transceiver 10Gbase-LR Te4/16"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471SEB     
+
+NAME: "Transceiver Te4/17", DESCR: "SFP+ Transceiver 10Gbase-LR Te4/17"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18470XC0     
+
+NAME: "Transceiver Te4/18", DESCR: "SFP+ Transceiver 10Gbase-LR Te4/18"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471W0D     
+
+NAME: "Transceiver Te4/19", DESCR: "SFP+ Transceiver 10Gbase-LR Te4/19"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18470VHM     
+
+NAME: "Transceiver Te4/20", DESCR: "SFP+ Transceiver 10Gbase-LR Te4/20"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471GSE     
+
+NAME: "5", DESCR: "WS-X6904-40G DCEF2T 4 port 40GE / 16 port 10GE Rev. 1.1"
+PID: WS-X6904-40G      ,                     VID: V01, SN: SAL18506A28
+
+NAME: "WS-F6K-DFC4-E Distributed Forwarding Card 4 EARL 1 sub-module of 5", DESCR: "WS-F6K-DFC4-E Distributed Forwarding Card 4 Rev. 1.2"
+PID: WS-F6K-DFC4-E     ,                     VID: V03, SN: SAL18495QYN
+
+NAME: "4X Interface Adapter Module Fo5/1", DESCR: "4X Interface Adapter Module Fo5/1"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY184600U1
+
+NAME: "4X Interface Adapter Module Fo5/2", DESCR: "4X Interface Adapter Module Fo5/2"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY1846016T
+
+NAME: "4X Interface Adapter Module Fo5/3", DESCR: "4X Interface Adapter Module Fo5/3"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY184600VW
+
+NAME: "4X Interface Adapter Module Fo5/4", DESCR: "4X Interface Adapter Module Fo5/4"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY18460155
+
+NAME: "Transceiver Te5/5", DESCR: "SFP+ Transceiver 10Gbase-LR Te5/5"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471HG2     
+
+NAME: "Transceiver Te5/6", DESCR: "SFP+ Transceiver 10Gbase-LR Te5/6"
+PID: SFP-10G-LR         ,                     VID: V02 , SN: FNS18471HDV     
+
+NAME: "6", DESCR: "WS-X6904-40G DCEF2T 4 port 40GE / 16 port 10GE Rev. 1.1"
+PID: WS-X6904-40G      ,                     VID: V01, SN: SAL185069ZA
+
+NAME: "WS-F6K-DFC4-E Distributed Forwarding Card 4 EARL 1 sub-module of 6", DESCR: "WS-F6K-DFC4-E Distributed Forwarding Card 4 Rev. 1.2"
+PID: WS-F6K-DFC4-E     ,                     VID: V03, SN: SAL18495R0B
+
+NAME: "4X Interface Adapter Module Fo6/1", DESCR: "4X Interface Adapter Module Fo6/1"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY184600SL
+
+NAME: "4X Interface Adapter Module Fo6/2", DESCR: "4X Interface Adapter Module Fo6/2"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY184600U3
+
+NAME: "4X Interface Adapter Module Fo6/3", DESCR: "4X Interface Adapter Module Fo6/3"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY184600U4
+
+NAME: "4X Interface Adapter Module Fo6/4", DESCR: "4X Interface Adapter Module Fo6/4"
+PID: CVR-CFP-4SFP10G   ,                     VID: V02 , SN: DTY184600V4
+
+NAME: "7", DESCR: "VS-SUP2T-10G 5 ports Supervisor Engine 2T 10GE w/ CTS Rev. 2.1"
+PID: VS-SUP2T-10G      ,                     VID: V06, SN: SAL18516DJ6
+
+NAME: "msfc sub-module of 7", DESCR: "VS-F6K-MSFC5 CPU Daughterboard Rev. 3.0"
+PID: VS-F6K-MSFC5      ,                     VID:    , SN: SAL18516D55
+
+NAME: "VS-F6K-PFC4 Policy Feature Card 4 EARL 1 sub-module of 7", DESCR: "VS-F6K-PFC4 Policy Feature Card 4 Rev. 3.0"
+PID: VS-F6K-PFC4       ,                     VID: V04, SN: SAL1850603E
+
+NAME: "8", DESCR: "VS-SUP2T-10G 5 ports Supervisor Engine 2T 10GE w/ CTS Rev. 2.1"
+PID: VS-SUP2T-10G      ,                     VID: V06, SN: SAL18516DJJ
+
+NAME: "msfc sub-module of 8", DESCR: "VS-F6K-MSFC5 CPU Daughterboard Rev. 3.0"
+PID: VS-F6K-MSFC5      ,                     VID:    , SN: SAL18516D7A
+
+NAME: "VS-F6K-PFC4 Policy Feature Card 4 EARL 1 sub-module of 8", DESCR: "VS-F6K-PFC4 Policy Feature Card 4 Rev. 3.0"
+PID: VS-F6K-PFC4       ,                     VID: V04, SN: SAL18505ZW6
+
+NAME: "11", DESCR: "WS-X6724-SFP CEF720 24 port 1000mb SFP Rev. 2.1"
+PID: WS-X6724-SFP      ,                     VID:    , SN: SAL083018K3
+
+NAME: "WS-F6700-CFC Centralized Forwarding Card EARL 1 sub-module of 11", DESCR: "WS-F6700-CFC Centralized Forwarding Card Rev. 2.0"
+PID: WS-F6700-CFC      ,                     VID:    , SN: SAD082807CY
+
+NAME: "Transceiver Gi11/22", DESCR: "SFP Transceiver 1000BaseLH Gi11/22"
+PID: Unspecified       ,                     VID: Unspecified, SN: FNS0838H4FP     
+
+NAME: "Transceiver Gi11/23", DESCR: "SFP Transceiver 1000BaseLH Gi11/23"
+PID: Unspecified       ,                     VID: Unspecified, SN: FNS0842C1ZU     
+
+NAME: "12", DESCR: "WS-X6724-SFP CEF720 24 port 1000mb SFP Rev. 2.1"
+PID: WS-X6724-SFP      ,                     VID:    , SN: SAL08332ES9
+
+NAME: "WS-F6700-CFC Centralized Forwarding Card EARL 1 sub-module of 12", DESCR: "WS-F6700-CFC Centralized Forwarding Card Rev. 2.0"
+PID: WS-F6700-CFC      ,                     VID:    , SN: SAD08320D8H
+
+NAME: "Transceiver Gi12/1", DESCR: "SFP Transceiver 1000BaseLH Gi12/1"
+PID: Unspecified       ,                     VID: Unspecified, SN: FNS1026H084     
+
+NAME: "Transceiver Gi12/2", DESCR: "SFP Transceiver 1000BaseLH Gi12/2"
+PID: Unspecified       ,                     VID: Unspecified, SN: FNS1026H08V     
+
+NAME: "Transceiver Gi12/3", DESCR: "SFP Transceiver 1000BaseLH Gi12/3"
+PID: Unspecified       ,                     VID: Unspecified, SN: FNS1026H08W     
+
+NAME: "Transceiver Gi12/4", DESCR: "SFP Transceiver 1000BaseLH Gi12/4"
+PID: Unspecified       ,                     VID: Unspecified, SN: FNS1026H07U     
+
+NAME: "Transceiver Gi12/23", DESCR: "SFP Transceiver 1000BaseLH Gi12/23"
+PID: Unspecified       ,                     VID: Unspecified, SN: FNS12521X0K     
+
+NAME: "Transceiver Gi12/24", DESCR: "SFP Transceiver 1000BaseLH Gi12/24"
+PID: Unspecified       ,                     VID: Unspecified, SN: FNS12521WZS     
+
+NAME: "13", DESCR: "WS-SVC-FWM-1 6 ports Firewall Module Rev. 3.0"
+PID: WS-SVC-FWM-1      ,                     VID:    , SN: SAD08330EYU
+
+NAME: "WS-C6513-E-FAN 1", DESCR: "Enhanced 13-slot Fan Tray 1"
+PID: WS-C6513-E-FAN    ,                     VID: V01, SN: DCH180200K2
+
+NAME: "PS 1 WS-CAC-8700W-E", DESCR: "8700W power supply 1"
+PID: WS-CAC-8700W-E    ,                     VID: V01, SN: DTM181800Q5
+
+NAME: "PS 2 WS-CAC-8700W-E", DESCR: "8700W power supply 2"
+PID: WS-CAC-8700W-E    ,                     VID: V01, SN: DTM181800Q7
 
 
-TCD1-041DS01#
+TCD1-041CS02#

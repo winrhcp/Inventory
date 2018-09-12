@@ -7,6 +7,7 @@ def main():
     """Main Function"""
     user = 'sakrapee'
     password = 'sakrapee41'
+
     ip_client = ""
     for n in sys.argv:
         try:
@@ -28,10 +29,29 @@ def core_switch(Host,username,passwd):
     port = 22
     switch = ""
     outdata = ""
+    ip_ds = ""
+    ip_core = ""
+    #filter ip client to core
+    check_client = Host.split('.')
+    if(len(check_client[1])==2):
+        ob = check_client[1]
+        ob = ob[0]
+        if(ob == "1"):
+            ip_core = "10.7.0.1"
+        elif(ob == "2"):
+            ip_core = "10.7.0.3"
+        elif(ob == "3"):
+            ip_core = "10.7.0.5"
+        else:
+            print("NOT FOUND THIS IP")
+            return
+    else:
+        print("NOT FOUND THIS IP")
+        return
     try:
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh.connect(Host ,port, username=username , password=passwd, look_for_keys=False ,allow_agent=False)
+        ssh.connect(ip_core ,port, username=username , password=passwd, look_for_keys=False ,allow_agent=False)
         console = ssh.invoke_shell()
         console.keep_this = ssh
 
@@ -39,14 +59,15 @@ def core_switch(Host,username,passwd):
 
         console.send('terminal length 0' + '\n')
         console.send('sh ip route '+ Host + '\n')
+        time.sleep(1)
         console.send('terminal length 24' + '\n')
         outdata = console.recv(204800)
 
         ssh.close()
-        print ("Finish Core Switch")
+        
 
     except (IOError , ValueError):
-        pass
+        return
     count_name_switch = 0
     for line in outdata.decode("utf-8").split('\n'):
         if('#' in line):
@@ -56,21 +77,16 @@ def core_switch(Host,username,passwd):
                 count_name_switch += 1
             else:
                 pass
-        elif ('*' in line):
+        elif('*' in line):
             temp1 = line.split(',')
-            ip_ds = temp1[0].split(' ')
+            ip_ds = temp1[1].split()
             ip_ds = ip_ds[1]
-            temp2 = temp1[1].split(' ')
-            ip_core = temp2[2]
-            temp3 = temp1[3].split(' ')
-            port = temp3[2]
-        core_name = switch
-        print("Switch Core Name :" + core_name)
-        print("IP Core :" + ip_core)
-        print("IP DS :" + ip_ds)
-        print("Port Core To DS : " + port)
-        
-        d_switch(Host, ip_core, ip_ds, core_name, port, username, passwd)
+    core_name = switch
+    print("Switch Core Name :" + core_name)
+    print("IP DS :" + ip_ds)
+    print ("Finish Core Switch")
+    d_switch(Host, ip_core, ip_ds, core_name, username, passwd)
+
     # if not os.path.exists(switch):
     #    os.makedirs(switch, mode=0o777)
     #    print ("Okey")
@@ -79,7 +95,7 @@ def core_switch(Host,username,passwd):
     # save = open('test3560.txt','w')
     # save.write(outdata.decode("utf-8") + '\n')                    
     # save.close()
-def d_switch(Host, ip_core, ip_ds, core_name, port_core_ds, username, passwd):
+def d_switch(Host, ip_core, ip_ds, core_name, username, passwd):
     """ssh to distribution switches and get DS name, IP DS, MAC AS, Vlan DS to AS, port DS to AS, IP AS"""
     port = 22
     ds_name = ""
@@ -99,6 +115,7 @@ def d_switch(Host, ip_core, ip_ds, core_name, port_core_ds, username, passwd):
 
         console.send('terminal length 0' + '\n')
         console.send('sh ip arp | in '+ Host + '\n')
+        time.sleep(1)
         console.send('terminal length 24' + '\n')
         outdata = console.recv(204800)
         count_name_switch = 0
@@ -117,6 +134,7 @@ def d_switch(Host, ip_core, ip_ds, core_name, port_core_ds, username, passwd):
 
         console.send('terminal length 0' + '\n')
         console.send('sh mac address-table | in '+ mac_as + '\n')
+        time.sleep(2)
         console.send('terminal length 24' + '\n')
         outdata = console.recv(204800)
         for line in outdata.decode("utf-8").split('\n'):
@@ -134,22 +152,23 @@ def d_switch(Host, ip_core, ip_ds, core_name, port_core_ds, username, passwd):
                 temp1 = line.split()
                 ip_as = temp1[2]
         ssh.close()
-        print ("Finish Distribution Switches")
+        
 
     except (IOError , ValueError):
         pass
     print("DS Name :" + ds_name)
     print("IP Core :" + ip_core)
     print("IP DS :" + ip_ds)
-    print("Port Core To DS : " + port_core_ds)
-    print("MAC AS :" + mac_as)
+    print("MAC Client :" + mac_as)
     print("Vlan DS To AS :" + vl_ds_as)
     print("Port DS To AS : " + port_ds_as)
     print("IP AS : " + ip_as)
+    print ("Finish Distribution Switches")
     """Core attribute"""
-    core = [core_name, ip_core, port_core_ds]
+    core = [core_name, ip_core]
     """DS attribute"""
     ds = [ds_name, ip_ds, vl_ds_as, port_ds_as]
+
     a_switch(Host, core, ds, username, passwd, mac_as, ip_as)
 
 def a_switch(Host, core, ds, username, passwd, mac_as, ip_as):
@@ -158,7 +177,6 @@ def a_switch(Host, core, ds, username, passwd, mac_as, ip_as):
 
     core_name = core[0]
     ip_core = core[1]
-    port_core_ds = core[2]
 
     ds_name = ds[0]
     ip_ds = ds[1]
@@ -175,22 +193,19 @@ def a_switch(Host, core, ds, username, passwd, mac_as, ip_as):
         console = ssh.invoke_shell()
         console.keep_this = ssh
         console.send('ssh -l '+ username + " " + ip_as + '\n')
+        time.sleep(1)
         console.send(passwd + '\n')
         print ("Login Access Switch")
 
         console.send('terminal length 0' + '\n')
         console.send('sh mac add | in '+ mac_as + '\n')
+        time.sleep(1)
         console.send('terminal length 24' + '\n')
         outdata = console.recv(204800)
-        count_name_switch = 0
         for line in outdata.decode("utf-8").split('\n'):
             if("#" in line):
-                if (count_name_switch == 0):
-                    keep = line.split('#')
-                    as_name = keep[0]
-                    count_name_switch += 1
-                else:
-                    pass
+                keep = line.split('#')
+                as_name = keep[0]
             elif ("DYNAMIC" in line):
                 temp1 = line.split()
                 port_as_client = temp1[3]
@@ -199,10 +214,10 @@ def a_switch(Host, core, ds, username, passwd, mac_as, ip_as):
         print("Port Acess Switch to Client : " + port_as_client)
         print("Vlan Client : " + vl_cli)
         ssh.close()
-        print ("Finish Access Switch")
+        
 
     except (IOError , ValueError):
         pass
-
+    print ("Finish Access Switch")
 
 main()
