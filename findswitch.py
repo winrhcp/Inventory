@@ -22,7 +22,6 @@ def main():
     # cwd = os.getcwd()
     # print ("Path Output " + (cwd))
     print ("--- End ---")
-    input("Press enter to exit...")
 
 def core_switch(Host,username,passwd):
     """ssh to core switch and get core name, ip core, ip DS, port core to DS"""
@@ -44,10 +43,10 @@ def core_switch(Host,username,passwd):
             ip_core = "10.7.0.5"
         else:
             print("NOT FOUND THIS IP")
-            return
+            return None
     else:
         print("NOT FOUND THIS IP")
-        return
+        return None
     try:
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -67,7 +66,7 @@ def core_switch(Host,username,passwd):
         
 
     except (IOError , ValueError):
-        return
+        return None
     count_name_switch = 0
     for line in outdata.decode("utf-8").split('\n'):
         if('#' in line):
@@ -130,7 +129,6 @@ def d_switch(Host, ip_core, ip_ds, core_name, username, passwd):
             elif ("ARPA" in line):
                 temp1 = line.split()
                 mac_as = temp1[3]
-                vl_ds_as = temp1[5]
 
         console.send('terminal length 0' + '\n')
         console.send('sh mac address-table | in '+ mac_as + '\n')
@@ -140,6 +138,7 @@ def d_switch(Host, ip_core, ip_ds, core_name, username, passwd):
         for line in outdata.decode("utf-8").split('\n'):
             if("dynamic" in line):
                 temp1 = line.split()
+                vl_ds_as = temp1[0]
                 port_ds_as = temp1[4]
 
         console.send('terminal length 0' + '\n')
@@ -186,21 +185,21 @@ def a_switch(Host, core, ds, username, passwd, mac_as, ip_as):
     vl_cli = ""
     port_as_client = ""
     as_name = ""
+    vl_name = ""
     try:
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         ssh.connect(ip_ds ,port, username=username , password=passwd, look_for_keys=False ,allow_agent=False)
         console = ssh.invoke_shell()
         console.keep_this = ssh
-        console.send('ssh -l '+ username + " " + ip_as + '\n')
+        console.send("ssh -l "+ username + " " + ip_as + '\n')
         time.sleep(1)
         console.send(passwd + '\n')
         print ("Login Access Switch")
 
         console.send('terminal length 0' + '\n')
         console.send('sh mac add | in '+ mac_as + '\n')
-        time.sleep(1)
-        console.send('terminal length 24' + '\n')
+        time.sleep(2)
         outdata = console.recv(204800)
         for line in outdata.decode("utf-8").split('\n'):
             if("#" in line):
@@ -210,12 +209,23 @@ def a_switch(Host, core, ds, username, passwd, mac_as, ip_as):
                 temp1 = line.split()
                 port_as_client = temp1[3]
                 vl_cli = temp1[0]
+
+        console.send('terminal length 0' + '\n')
+        console.send('sh vl br' + '\n')
+        time.sleep(2)
+        outdata = console.recv(204800)
+        for line in outdata.decode("utf-8").split('\n'):
+            if (vl_cli in line):
+                temp1 = line.split()
+                if (vl_cli == temp1[0]):
+                    vl_name = temp1[1]
+
         print("Acess Switch Name : " + as_name)
         print("Port Acess Switch to Client : " + port_as_client)
         print("Vlan Client : " + vl_cli)
+        print("Vlan Name : " + vl_name)
         ssh.close()
         
-
     except (IOError , ValueError):
         pass
     print ("Finish Access Switch")

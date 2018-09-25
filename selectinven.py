@@ -21,7 +21,6 @@ def main():
     # cwd = os.getcwd()
     # print ("Path Output " + (cwd))
     print ("--- End ---")
-    input("Press enter to exit...")
 
 
 def call(Host,username,passwd, en_pass):

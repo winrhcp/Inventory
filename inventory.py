@@ -21,7 +21,6 @@ def main():
     # cwd = os.getcwd()
     # print ("Path Output " + (cwd))
     print ("--- End ---")
-    input("Press enter to exit...")
 
 
 def call(Host,username,passwd, en_pass):
@@ -117,9 +116,6 @@ def call(Host,username,passwd, en_pass):
     #    print ("Okey")
     # elif os.path.exists(switch):
     #    print ("None Okey")
-    save = open("testcore.txt",'w')
-    save.write(outdata.decode("utf-8") + '\n')
-    save.close()
 
     cnx.commit()
     cursor.close()
